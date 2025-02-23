@@ -17,5 +17,8 @@
 	<classpathentry kind="lib" path="/Users/gabrielcraiovan/Desktop/WINTER 2025/SENG 438/2 assignments/2 ass/seng438-a2-GCraio/Assignment 2-artifact/JFreeChart/lib/jMock/jmock-2.5.1.jar"/>
 	<classpathentry kind="lib" path="/Users/gabrielcraiovan/Desktop/WINTER 2025/SENG 438/2 assignments/2 ass/seng438-a2-GCraio/Assignment 2-artifact/JFreeChart/lib/jMock/jmock-junit4-2.5.1.jar"/>
 	<classpathentry kind="lib" path="/Users/gabrielcraiovan/Desktop/WINTER 2025/SENG 438/2 assignments/2 ass/seng438-a2-GCraio/Assignment 2-artifact/JFreeChart/lib/jMock/jmock-script-2.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/zaida/github-classroom/seng438-winter-2025/seng438-a2-zaid-ahmed1/seng438-a2-artifacts/Assignment 2-artifact/JFreeChart v1.0/JFreeChart/jfreechart.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Users/zaida/github-classroom/seng438-winter-2025/seng438-a2-zaid-ahmed1/seng438-a2-artifacts/Assignment 2-artifact/JFreeChart v1.0/JFreeChart/lib/jMock/jmock-2.5.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
