@@ -42,39 +42,23 @@ public class RangeTest {
     	    
     }
     
-    Mockery context = new Mockery();
-
+    // Tests for getUpperBound
     @Test
     public void testGetUpperBound_Zero() {
-        Range range = context.mock(Range.class);
-        context.checking(new Expectations() {{
-            allowing(range).getUpperBound();
-            will(returnValue(0.0));
-        }});
-
-        assertEquals(0.0, range.getUpperBound(), 0.0);
+    	Range range = new Range(-10,0);
+    	assertEquals(0, range.getUpperBound(), 0.0);
     }
-
+   
     @Test
     public void testGetUpperBound_Negative() {
-        Range range = context.mock(Range.class);
-        context.checking(new Expectations() {{
-            allowing(range).getUpperBound();
-            will(returnValue(-5.0));
-        }});
-
-        assertEquals(-5.0, range.getUpperBound(), 0.0);
+    	Range range = new Range(-10,-5);
+    	assertEquals(-5, range.getUpperBound(), 0.0);
     }
-
+    
     @Test
     public void testGetUpperBound_Positive() {
-        Range range = context.mock(Range.class);
-        context.checking(new Expectations() {{
-            allowing(range).getUpperBound();
-            will(returnValue(10.0));
-        }});
-
-        assertEquals(10.0, range.getUpperBound(), 0.0);
+    	Range range = new Range(0,10);
+    	assertEquals(10, range.getUpperBound(), 0.0);
     }
     
     // Test for getCentralValue
