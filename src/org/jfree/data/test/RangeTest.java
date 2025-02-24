@@ -39,5 +39,35 @@ public class RangeTest {
     	    
     }
     
+    // Tests for getUpperBound
+    @Test
+    public void testGetUpperBound_Zero() {
+    	Range range = new Range(-10,0);
+    	assertEquals(0, range.getUpperBound(), 0.0);
+    }
    
+    @Test
+    public void testGetUpperBound_Negative() {
+    	Range range = new Range(-10,-5);
+    	assertEquals(-5, range.getUpperBound(), 0.0);
+    }
+    
+    @Test
+    public void testGetUpperBound_Positive() {
+    	Range range = new Range(0,10);
+    	assertEquals(10, range.getUpperBound(), 0.0);
+    }
+    
+    // Test for getCentralValue
+    @Test
+    public void testGetCentralValue_Whole() {
+    	Range range = new Range(0,10);
+    	assertEquals(5, range.getCentralValue(), 0.0);
+    }
+    
+    @Test
+    public void testGetCentralValue_Fractional() {
+    	Range range = new Range(1,2);
+    	assertEquals(1.5, range.getCentralValue(), 0.0);
+    }
 }
